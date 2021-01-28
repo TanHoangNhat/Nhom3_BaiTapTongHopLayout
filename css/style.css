@@ -11,7 +11,182 @@ html {
 
 body {
     /* Font family */
-    /* font-family: ; */
+    font-family: 'Roboto', sans-serif;
 }
 
 /* ---------- */
+
+/* NAVBAR */
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 9;
+} 
+header nav {
+    background-color: #fffffffa;
+} 
+
+header nav a.navbar-brand img {
+    width: 50px;
+    margin: 0 1rem;
+}
+header div.center {
+    flex-grow: 2;
+    justify-content: flex-end;
+}
+header nav div.center ul li a {
+    color: black;
+    font-size: 1.5rem;
+    margin-right: 10px;
+    transition: all 0.5s;
+}
+
+header nav div.center ul li a:hover {
+    color: #fb4226;
+}
+
+header div.right {
+    justify-content: flex-end;
+}
+header div.right ul li.login {
+    border-right: 1px solid #9b9b9b;
+}
+header div.right ul li.login,
+header div.right ul li.dropdown {
+    color: #9b9b9b;
+    padding: 0 1rem;
+}
+header div.right ul li.login i,
+header div.right ul li.dropdown i {
+    font-size: 2.5rem;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding: 1px;
+}
+header div.right ul li.login a,
+header div.right ul li.dropdown a{
+    display: inline;
+    color: #9b9b9b;
+    font-size: 1.3rem;
+}
+
+.navbar-white .navbar-toggler-icon {
+    background-image: url(./../img/menu-options.png
+    );
+    width: 30px;
+    height: 20px;
+}
+/* END NAVBAR */
+
+/* CAROUSEL */
+#demo .carousel-indicators {
+    bottom: 8rem;
+}
+
+#demo .carousel-indicators li {
+    width: 12px;
+    height: 12px;
+    border: 1px solid transparent;
+    border-radius: 12px;
+}
+
+#demo .carousel-indicators li.active {
+    background-color: #fb4226;
+}
+
+#demo .carousel-inner .carousel-item.slide1{
+    background-image: url(./../img/slide-1.jpg);
+} 
+#demo .carousel-inner .carousel-item.slide2{
+    background-image: url(./../img/slide-2.jpg);
+}
+#demo .carousel-inner .carousel-item.slide3{
+    background-image: url(./../img/slide-3.jpg);
+}
+#demo .carousel-inner .carousel-item.slide4{
+    background-image: url(./../img/slide-4.jpg);
+}
+#demo .carousel-inner .carousel-item.slide5{
+    background-image: url(./../img/slide-5.png);
+}
+
+#demo .carousel-inner .carousel-item.slide1,
+#demo .carousel-inner .carousel-item.slide2,
+#demo .carousel-inner .carousel-item.slide3,
+#demo .carousel-inner .carousel-item.slide4,
+#demo .carousel-inner .carousel-item.slide5{
+    height: 600px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: 60px;
+} 
+
+@media screen and (max-width: 1200px) {
+    #demo .carousel-inner .carousel-item.slide1,
+    #demo .carousel-inner .carousel-item.slide2,
+    #demo .carousel-inner .carousel-item.slide3,
+    #demo .carousel-inner .carousel-item.slide4,
+    #demo .carousel-inner .carousel-item.slide5
+    {
+    height: 400px;
+    }
+    #demo .carousel-indicators {
+        display: none;
+    } 
+}
+@media screen and (max-width: 992px) {
+    #demo .carousel-inner .carousel-item.slide1,
+    #demo .carousel-inner .carousel-item.slide2,
+    #demo .carousel-inner .carousel-item.slide3,
+    #demo .carousel-inner .carousel-item.slide4,
+    #demo .carousel-inner .carousel-item.slide5
+    {
+    height: 300px;
+    }
+    #demo .carousel-indicators {
+        display: none;
+    } 
+} 
+@media screen and (max-width: 576px) {
+    #demo .carousel-inner .carousel-item.slide1,
+    #demo .carousel-inner .carousel-item.slide2,
+    #demo .carousel-inner .carousel-item.slide3,
+    #demo .carousel-inner .carousel-item.slide4,
+    #demo .carousel-inner .carousel-item.slide5
+    {
+    height: 200px;
+    }
+    #demo .carousel-indicators {
+        display: none;
+    } 
+}  
+
+.carousel-control-prev-icon {
+    background-image: url(./../img/back-session.png);
+}
+
+.carousel-control-next-icon {
+    background-image: url(./../img/next-session.png);
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 50px;
+    height: 50px;
+}
+
+#demo .carousel-inner .carousel-item a {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+#demo .carousel-inner:hover a {
+    opacity: 1;
+}
+
+/* END CAROUSEL */
