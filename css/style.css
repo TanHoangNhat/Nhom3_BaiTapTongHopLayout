@@ -15,3 +15,108 @@ body {
 }
 
 /* ---------- */
+
+/* NEWS */
+#news .news__content {
+    max-width: 94rem;
+    margin: auto;
+}
+
+.news__content .news__nav .nav-pills li a {
+    color: black;
+    background-color: transparent;
+    font-size: 2rem;
+    font-weight: 600;
+    transition: .2s all;
+    line-height: 2rem;
+}
+
+.news__content .news__nav .nav-pills li a.active {
+    color: #fa5238;
+    font-size: 2.3rem;
+}
+
+.news__content .news__nav .nav-pills li:hover a {
+    font-size: 2.3rem;
+}
+
+.news__nav .news__main .news__item a img,
+.news__nav .news__secondary .news__item a img {
+    width: 100%;
+    border-radius: .4rem;
+}
+
+.news__main > div,
+.news__secondary > div  {
+    padding: 0 .75rem;
+}
+
+.news__item {
+    margin-bottom: 2rem;
+}
+
+.news__item h4 {
+    height: 4.2rem;
+    overflow: hidden;
+}
+
+.news__item h4 a {
+    color: black;
+    transition: .4s all;
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+
+.news__item h4:hover a {
+    color: #fa5238;
+}
+
+.news__item p {
+    font-size: 1.3rem;
+    color: #4a4a4a;
+    text-align: justify;
+    height: 5.5rem;
+    overflow: hidden;
+}
+
+.news__item span {
+    font-size: 1.2rem;
+    color: #bbb;
+    cursor: pointer;
+}
+
+.news__item span img {
+    width: 1.8rem;
+    height: auto;
+    transition: .3s all;
+}
+
+.news__item span:hover img {
+    transform: scale(1.1);
+}
+
+.news__secondary .news__item--small .news__title {
+    opacity: .7;
+}
+
+#news .news__content .news__loadmore a {
+    color: #949494;
+    border: 1px solid #949494;
+    font-size: 1.4rem;
+    padding: .7rem 2.5rem;
+    border-radius: 4px;
+    background-color: transparent;
+    transition: .3s all;
+    font-weight: 500;
+    outline: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#news .news__content .news__loadmore a:hover {
+    color: white;
+    border: 1px solid #fa5238;
+    background-color: #fa5238;
+}
+
+/* END NEWS */
