@@ -15,24 +15,29 @@ body {
 }
 
 /* ---------- */
+
 /* NAVBAR */
+
 header {
     position: fixed;
     width: 100%;
     z-index: 9;
-} 
+}
+
 header nav {
     background-color: #fffffffa;
-} 
+}
 
 header nav a.navbar-brand img {
     width: 50px;
     margin: 0 1rem;
 }
+
 header div.center {
     flex-grow: 2;
     justify-content: flex-end;
 }
+
 header nav div.center ul li a {
     color: black;
     font-size: 1.5rem;
@@ -47,24 +52,25 @@ header nav div.center ul li a:hover {
 header div.right {
     justify-content: flex-end;
 }
+
 header div.right ul li.login {
     border-right: 1px solid #9b9b9b;
 }
-header div.right ul li.login,
-header div.right ul li.dropdown {
+
+header div.right ul li.login, header div.right ul li.dropdown {
     color: #9b9b9b;
     padding: 0 1rem;
 }
-header div.right ul li.login i,
-header div.right ul li.dropdown i {
+
+header div.right ul li.login i, header div.right ul li.dropdown i {
     font-size: 2.5rem;
     width: 30px;
     height: 30px;
     text-align: center;
     padding: 1px;
 }
-header div.right ul li.login a,
-header div.right ul li.dropdown a{
+
+header div.right ul li.login a, header div.right ul li.dropdown a {
     display: inline;
     color: #9b9b9b;
     font-size: 1.3rem;
@@ -72,13 +78,15 @@ header div.right ul li.dropdown a{
 
 .navbar-white .navbar-toggler-icon {
     background-image: url(./../images/menu-options.png
-    );
+);
     width: 30px;
     height: 20px;
 }
+
 /* END NAVBAR */
 
 /* CAROUSEL */
+
 #demo .carousel-indicators {
     bottom: 8rem;
 }
@@ -94,73 +102,60 @@ header div.right ul li.dropdown a{
     background-color: #fb4226;
 }
 
-#demo .carousel-inner .carousel-item.slide1{
+#demo .carousel-inner .carousel-item.slide1 {
     background-image: url(./../images/slide-1.jpg);
-} 
-#demo .carousel-inner .carousel-item.slide2{
+}
+
+#demo .carousel-inner .carousel-item.slide2 {
     background-image: url(./../images/slide-2.jpg);
 }
-#demo .carousel-inner .carousel-item.slide3{
+
+#demo .carousel-inner .carousel-item.slide3 {
     background-image: url(./../images/slide-3.jpg);
 }
-#demo .carousel-inner .carousel-item.slide4{
+
+#demo .carousel-inner .carousel-item.slide4 {
     background-image: url(./../images/slide-4.jpg);
 }
-#demo .carousel-inner .carousel-item.slide5{
+
+#demo .carousel-inner .carousel-item.slide5 {
     background-image: url(./../images/slide-5.png);
 }
 
-#demo .carousel-inner .carousel-item.slide1,
-#demo .carousel-inner .carousel-item.slide2,
-#demo .carousel-inner .carousel-item.slide3,
-#demo .carousel-inner .carousel-item.slide4,
-#demo .carousel-inner .carousel-item.slide5{
+#demo .carousel-inner .carousel-item.slide1, #demo .carousel-inner .carousel-item.slide2, #demo .carousel-inner .carousel-item.slide3, #demo .carousel-inner .carousel-item.slide4, #demo .carousel-inner .carousel-item.slide5 {
     height: 600px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     margin-top: 60px;
-} 
+}
 
 @media screen and (max-width: 1200px) {
-    #demo .carousel-inner .carousel-item.slide1,
-    #demo .carousel-inner .carousel-item.slide2,
-    #demo .carousel-inner .carousel-item.slide3,
-    #demo .carousel-inner .carousel-item.slide4,
-    #demo .carousel-inner .carousel-item.slide5
-    {
-    height: 400px;
+    #demo .carousel-inner .carousel-item.slide1, #demo .carousel-inner .carousel-item.slide2, #demo .carousel-inner .carousel-item.slide3, #demo .carousel-inner .carousel-item.slide4, #demo .carousel-inner .carousel-item.slide5 {
+        height: 400px;
     }
     #demo .carousel-indicators {
         display: none;
-    } 
+    }
 }
+
 @media screen and (max-width: 992px) {
-    #demo .carousel-inner .carousel-item.slide1,
-    #demo .carousel-inner .carousel-item.slide2,
-    #demo .carousel-inner .carousel-item.slide3,
-    #demo .carousel-inner .carousel-item.slide4,
-    #demo .carousel-inner .carousel-item.slide5
-    {
-    height: 300px;
+    #demo .carousel-inner .carousel-item.slide1, #demo .carousel-inner .carousel-item.slide2, #demo .carousel-inner .carousel-item.slide3, #demo .carousel-inner .carousel-item.slide4, #demo .carousel-inner .carousel-item.slide5 {
+        height: 300px;
     }
     #demo .carousel-indicators {
         display: none;
-    } 
-} 
+    }
+}
+
 @media screen and (max-width: 576px) {
-    #demo .carousel-inner .carousel-item.slide1,
-    #demo .carousel-inner .carousel-item.slide2,
-    #demo .carousel-inner .carousel-item.slide3,
-    #demo .carousel-inner .carousel-item.slide4,
-    #demo .carousel-inner .carousel-item.slide5
-    {
-    height: 200px;
+    #demo .carousel-inner .carousel-item.slide1, #demo .carousel-inner .carousel-item.slide2, #demo .carousel-inner .carousel-item.slide3, #demo .carousel-inner .carousel-item.slide4, #demo .carousel-inner .carousel-item.slide5 {
+        height: 200px;
     }
     #demo .carousel-indicators {
         display: none;
-    } 
-}  
+    }
+}
 
 .carousel-control-prev-icon {
     background-image: url(./../images/back-session.png);
@@ -169,8 +164,8 @@ header div.right ul li.dropdown a{
 .carousel-control-next-icon {
     background-image: url(./../images/next-session.png);
 }
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
     width: 50px;
     height: 50px;
 }
@@ -191,6 +186,7 @@ header div.right ul li.dropdown a{
 /* END CAROUSEL */
 
 /* NEWS */
+
 #news .news__content {
     max-width: 94rem;
     margin: auto;
@@ -214,14 +210,12 @@ header div.right ul li.dropdown a{
     font-size: 2.3rem;
 }
 
-.news__nav .news__main .news__item a img,
-.news__nav .news__secondary .news__item a img {
+.news__nav .news__main .news__item a img, .news__nav .news__secondary .news__item a img {
     width: 100%;
     border-radius: .4rem;
 }
 
-.news__main > div,
-.news__secondary > div  {
+.news__main>div, .news__secondary>div {
     padding: 0 .75rem;
 }
 
@@ -296,6 +290,7 @@ header div.right ul li.dropdown a{
 /* END NEWS */
 
 /* APPLICATION */
+
 #app .app__wrapper {
     background: url("../images/backapp.jpg") repeat-x;
     background-size: contain;
@@ -346,3 +341,43 @@ header div.right ul li.dropdown a{
 .app__content .app__left p.download a {
     border-bottom: 1px solid white;
 }
+
+.app__content .app__right {
+    position: relative;
+}
+
+.app__content .app__right>img {
+    width: 44%;
+}
+
+.app__content .app__right .app__slider {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: block;
+    padding: 1.05rem .54rem;
+    width: 44%;
+}
+
+.app__slider .slider__content {
+    border-radius: 2rem;
+    overflow: hidden;
+}
+
+.app__slider .slider__content .slick-list, .app__slider .slider__content .slick-track, .app__slider .slider__content .slick-slide>div {
+    height: 100%;
+}
+
+.app__slider .slide__item {
+    width: 100%;
+    height: 100%;
+}
+
+.app__slider .slide__item img {
+    width: 100%;
+    height: 100%;
+}
+
+/* END APPLICATION */
