@@ -25,28 +25,18 @@ header {
 header nav {
     background-color: #fffffffa;
 } 
-
 header nav a.navbar-brand img {
     width: 50px;
     margin: 0 1rem;
 }
-header div.center {
-    flex-grow: 2;
-    justify-content: flex-end;
-}
-header nav div.center ul li a {
+header nav .center ul li a {
     color: black;
     font-size: 1.5rem;
     margin-right: 10px;
     transition: all 0.5s;
 }
-
 header nav div.center ul li a:hover {
     color: #fb4226;
-}
-
-header div.right {
-    justify-content: flex-end;
 }
 header div.right ul li.login {
     border-right: 1px solid #9b9b9b;
@@ -70,7 +60,6 @@ header div.right ul li.dropdown a{
     color: #9b9b9b;
     font-size: 1.3rem;
 }
-
 .navbar-white .navbar-toggler-icon {
     background-image: url(./../img/menu-options.png
     );
@@ -80,6 +69,10 @@ header div.right ul li.dropdown a{
 /* END NAVBAR */
 
 /* CAROUSEL */
+.carousel_section {
+    position: relative;
+}
+
 #demo .carousel-indicators {
     bottom: 8rem;
 }
@@ -116,7 +109,7 @@ header div.right ul li.dropdown a{
 #demo .carousel-inner .carousel-item.slide3,
 #demo .carousel-inner .carousel-item.slide4,
 #demo .carousel-inner .carousel-item.slide5{
-    height: 600px;
+    height: 570px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -189,4 +182,191 @@ header div.right ul li.dropdown a{
     opacity: 1;
 }
 
+.select_tab {
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    max-width: 70%;
+}
+
+.select_tab .container {
+    padding: 2rem;
+    background-color: white;
+}
+
+.select_tab .select_movie {
+    border-right: 1px solid #ebe8e8;
+}
+
+.select_tab .select_movie button{
+    width: 100%;
+    outline: none;
+    border: none;
+    background: white;
+    padding-top: 6px;
+}
+
+.select_tab .buy_now button{
+    width: 100%;
+    font-size: 1.2rem;
+}
+
+.select_tab .select_movie button h4{
+    display: inline;
+}
+
+.dropdown-menu {
+    font-size: 1.2rem;
+}
 /* END CAROUSEL */
+
+/* MOVIE LISTS */
+
+#movie_list {
+    padding-top: 8rem;
+    width: 100%;
+}
+#movie_list .movie_maxwidth{
+    max-width: 940px;
+    margin: auto;
+}
+#movie_list .movie_maxwidth ul.nav{
+    padding-bottom: 4rem;
+}
+#movie_list ul li.nav-item a.nav-link {
+    color: black;
+    font-size: 2rem;
+    transition: all 0.5s; 
+}
+#movie_list ul li.nav-item .nav-link.active {
+    color: #fb4226;
+    font-size: 2.5rem;
+}
+#movie_list .tab-content .showing_item {
+    position: relative; 
+} 
+#movie_list .tab-content .showing_item img.poster{
+    width: 100%;
+}
+.tab-content .showing_item .item_poster {
+    position: relative;
+}
+.tab-content .showing_item .item_poster .hover_poster{
+    background: linear-gradient(to top, rgb(0, 0, 0), transparent 100%);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.5s;
+}
+.tab-content .showing_item:hover .hover_poster{
+    opacity: 1;
+    cursor: pointer;
+}
+.showing_item .item_poster .hover_poster a img{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.showing_item .item_content{
+    position: relative;
+}
+.showing_item .item_content .info span{
+    border-radius: 4px;
+    font-size: 1.4rem;
+    padding: 2px;
+    background: #fb4226;
+    color: white;
+    margin-right: 5px;
+}
+.showing_item .item_content .info  h3{
+    display: inline;
+    line-height: 3rem;
+    font-size: 1.7rem;
+    text-transform: capitalize;
+}
+.showing_item .item_content .info p{
+    font-size: 1.3rem;
+    color: grey;
+    letter-spacing: 0.5px;
+}
+.showing_item .item_content button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px;
+    text-align: center;
+    background: #fb4226;
+    border: none;
+    outline: none;
+    margin: 1rem 0;
+    opacity: 0;
+    transition: all 0.5s;
+}
+.showing_item:hover .info{
+    opacity: 0;
+} 
+.showing_item:hover button{
+    opacity: 1;
+}
+
+
+.showing_item .showing_rate p{
+    font-size: 1.8rem;
+    line-height: 1.2px;
+    transform: translateY(12px);
+    color: #fff;
+}
+.showing_item .showing_rate span{
+    display: flex;
+    justify-content: center;
+    padding: 3px;
+}
+.showing_item .showing_rate span img{
+    width: 8px;
+    height: 8px;
+    transform: translateY(12px);
+}
+.showing_item .showing_rate{
+    background-color: rgba(12,27,54,.8);
+    border: 1px solid #1f2e46;
+    border-radius: 4px;
+    width: 55px;
+    height: 40px;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    transform: translateX(-12px);
+}
+.slick-prev{
+    left: -55px;
+    top: 50%;
+}
+.slick-prev:before {
+    background-image: url('./../img/back-session.png');
+    background-size: 50px 50px;
+    display: inline-block;
+    width: 50px; 
+    height: 50px;
+    content:"";
+}
+.slick-next:before {
+    background-image: url('./../img/next-session.png');
+    background-size: 50px 50px;
+    display: inline-block;
+    width: 50px; 
+    height: 50px;
+    content:"";
+}
+
