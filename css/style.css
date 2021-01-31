@@ -218,7 +218,7 @@ header div.right ul li.login a, header div.right ul li.dropdown a {
 /* MOVIE LISTS */
 
 #movie_list {
-    padding-top: 8rem;
+    padding: 8rem 0;
     width: 100%;
 }
 #movie_list .movie_maxwidth{
