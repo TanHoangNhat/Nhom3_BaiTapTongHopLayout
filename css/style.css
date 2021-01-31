@@ -218,7 +218,8 @@ header div.right ul li.login a, header div.right ul li.dropdown a {
 /* MOVIE LISTS */
 
 #movie_list {
-    padding: 8rem 0;
+    padding-top: 8rem;
+    padding-bottom: 5rem;
     width: 100%;
 }
 #movie_list .movie_maxwidth{
@@ -364,6 +365,189 @@ header div.right ul li.login a, header div.right ul li.dropdown a {
     content:"";
 }
 
+
+/* CinemaBlock  */
+@media screen and (max-width: 768px){
+    .col-768 {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+.cinemaBlock{
+    margin-bottom: 10rem;
+}
+.cinemaBlock .bg_cinemaBlock img{
+    width: 100%;
+    height: 10rem;
+}
+.cinemaBlock .col-md-1{
+    border: 1px solid #e2e2e2;
+    padding: 0;
+    border-right: none;
+}
+
+.cinemaBlock .nav-item a img{
+    width: 50px;
+    max-width: 100%;
+    height: auto;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e2e2e2;
+    opacity: 0.35;
+}
+.cinemaBlock .nav-item a.active img{
+    opacity: 1;
+}
+.cinemaBlock .nav-item a img:hover{
+    opacity: 1;
+}
+
+.cinemaBlock .col-md-11{
+    border: 1px solid#e2e2e2;
+}
+.cinemaBlock .col-md-4{
+    padding: 0;  
+    border-right: 1px solid #e2e2e2;
+}
+.cinemaBlock .nav-item{
+    width: 100%;
+}
+.cinemaBlock .nav-link {
+    background-color: white !important;
+    cursor: pointer;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.cinemaBlock .nav-link.active .details{
+    opacity: 1;
+}
+.cinemaBlock .nav-link .details{
+    padding-bottom: 5px;
+    border-bottom: 1px solid #e2e2e2;
+    display: flex;
+    opacity: 0.35;
+}
+
+.cinemaBlock .nav-link .details:hover{
+    opacity: 1;
+}
+.cinemaBlock .nav-link .details .cinemaImage .image {
+    width: 54px;
+    margin-right: 20px;
+}
+
+.cinemaBlock .nav-link .details .describe{
+    display: block;
+    font-size: 14px;
+   
+}
+.cinemaBlock .nav-link .details .describe p{
+    margin-bottom: 0;
+    color: black;
+}
+.cinemaBlock .nav-link .details .describe .address{
+    color: #949494;
+    font-size: 12px;
+}
+.cinemaBlock .nav-link .details .describe .green{
+    color: #8bc541;
+}
+.cinemaBlock .nav-link .details .describe .pink{
+    color: #df0d7a;
+}
+.cinemaBlock .nav-link .details .describe .grey{
+    color: #9c9c9c;
+}
+.cinemaBlock .nav-link .details .describe .yellow{
+    color: #e5a813;
+}
+.cinemaBlock .nav-link .details .describe .orange{
+    color:#ca4137;
+}
+.cinemaBlock .nav-link .details .describe .moreInfo{
+    color: red;
+}
+/* col-md-8  */
+.cinemaBlock .col-md-8{
+    max-height: 600px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.cinemaBlock .big-details {
+    padding: 10px 0;
+    border-bottom: 1px solid #e2e2e2;
+}
+
+.cinemaBlock .big-details .cinemaImage img{
+    margin-right: 15px;
+}
+.cinemaBlock .big-details .titleInfo{
+    width: 100%;
+    padding-top: 5px;
+}
+.cinemaBlock .big-details .titleInfo .bg-green{
+    background-color: green;
+}
+.cinemaBlock .big-details .titleInfo .bg-red{
+    background-color: red;
+}
+
+.cinemaBlock .big-details .titleInfo span{
+    color: #fff;
+    border-radius: 4px;
+    padding: 2px 5px;
+    margin-right: 5px;
+    font-size: 12px;
+    min-width: 33px;
+    float: left;
+    text-align: center;
+}
+
+.cinemaBlock .big-details .titleInfo .movieTitle{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 0;
+    line-height: 22px;
+}
+.cinemaBlock .big-details .titleInfo .info{
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #9b9b9b;
+}
+.cinemaBlock .big-details .typeTiming{
+
+    padding-top: 8px;
+}
+.cinemaBlock .big-details .typeTiming .version{
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.cinemaBlock .big-details .typeTiming .session{
+    display: flex;
+    flex-flow: row wrap;
+}
+.cinemaBlock .big-details .typeTiming .session a {
+    width: calc(25% - 13px);
+    text-decoration: none;
+    color: #9b9b9b;
+    padding: 10px 0;
+    background-color: #fbfbfb;
+    margin: 0 10px 10px 0;
+    border-radius: 7px;
+    display: block;
+    border: 1px solid #9b9b9b;
+    text-align: center; 
+}
+.cinemaBlock .big-details .typeTiming .session .start-time{
+    
+    color: #108f3e;
+    transition: all 0.3s;
+}
+.cinemaBlock .big-details .typeTiming .session a:hover .start-time{
+    color: red;
+}
+
+/* End -- CinemaBlock  */
 
 /* NEWS */
 
