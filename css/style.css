@@ -25,7 +25,8 @@ header {
 }
 
 header nav {
-    background-color: #fffffffa;
+    background-color: rgba(255,255,255,.95);
+    box-shadow: 0 0 15px rgb(0 0 0 / 30%);
 } 
 header nav a.navbar-brand img {
     width: 50px;
@@ -41,7 +42,14 @@ header nav div.center ul li a:hover {
     color: #fb4226;
 }
 header div.right ul li.login {
-    border-right: 1px solid #9b9b9b;
+    border-right: 1px solid #9b9b9b42;
+}
+
+header div.right ul li.login img{
+    height: auto;
+    width: 30px;
+    border-radius: 25px;
+    margin-right: 5px;
 }
 
 header div.right ul li.login, header div.right ul li.dropdown {
@@ -49,12 +57,12 @@ header div.right ul li.login, header div.right ul li.dropdown {
     padding: 0 1rem;
 }
 
-header div.right ul li.login i, header div.right ul li.dropdown i {
-    font-size: 2.5rem;
-    width: 30px;
-    height: 30px;
-    text-align: center;
-    padding: 1px;
+header div.right ul li.dropdown {
+    transform: translateY(4px);
+}
+
+header div.right ul li.dropdown img{
+    opacity: 0.5;
 }
 
 header div.right ul li.login a, header div.right ul li.dropdown a {
@@ -78,6 +86,7 @@ header div.right ul li.login a, header div.right ul li.dropdown a {
 
 #demo .carousel-indicators {
     bottom: 8rem;
+    z-index: 1;
 }
 
 #demo .carousel-indicators li {
